@@ -1,5 +1,6 @@
 #root {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -39,4 +40,59 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/*  */
+.header {
+  margin-bottom: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todo_list_item {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.todo_list_item.complete {
+  background-color: #000;
+  padding-left: 6px;
+  border-radius: 8px;
+  color: #888;
+}
+input {
+  height: 40px;
+  max-width: 500px;
+  width: 100%;
+}
+.todo_text {
+  min-width: 40%;
+  text-align: left;
+}
+.btn_wrap {
+  min-width: 30%;
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+}
+.add_wrap {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.edit_input {
+  display: none;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+button:disabled:hover {
+  border-color: rgb(26, 26, 26);
 }
