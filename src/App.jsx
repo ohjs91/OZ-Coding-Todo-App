@@ -17,7 +17,7 @@ function App() {
     </>
   );
 }
-
+// 헤더 추가
 function Header() {
   return (
     <header className="header">
@@ -62,6 +62,8 @@ function TodoList({ todoList, setTodoList }) {
 function Todo({ todo, setTodoList }) {
   const [inputValue, setInputValue] = useState("");
   const [inputFlag, setInputFlag] = useState(false);
+
+  // 수정 추가
   function editFuc() {
     if (inputFlag) {
       if (inputValue.length > 0) {
@@ -77,6 +79,7 @@ function Todo({ todo, setTodoList }) {
       setInputFlag(true);
     }
   }
+  // 완료 상태 추가
   function completeTodo() {
     setTodoList((prev) =>
       prev.map((el) => {
